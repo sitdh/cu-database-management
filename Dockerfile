@@ -6,4 +6,5 @@ ADD https://raw.githubusercontent.com/sitdh/cu-database-management/master/Resour
 ADD https://raw.githubusercontent.com/sitdh/cu-database-management/master/Resources/init-db.sh /var/cu-db/init-db.sh
 
 ENV MYSQL_ROOT_PASSWORD=pass
-ENTRYPOINT /var/cu-db/init-db.sh
+
+RUN /var/cu-db/init-db.sh
