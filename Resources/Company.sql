@@ -20,6 +20,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE DATABASE IF NOT EXISTS `Company` CHARSET=utf8;
+USE `Company`;
 
 # Dump of table DEPARTMENT
 # ------------------------------------------------------------
