@@ -1,5 +1,5 @@
 #!/bin/bash
 # /usr/bin/mysqld_self &
 # sleep 5
-mysql -u root -e "CREATE DATABASE IF NOT EXISTS `Company`"
-mysql -u root Company < /var/cu-db/Company.sql
+mysql -uroot --password="$MYSQL_ROOT_PASSWORD" -e "CREATE DATABASE IF NOT EXISTS `Company`"
+mysql -uroot --password="$MYSQL_ROOT_PASSWORD" Company < /var/cu-db/Company.sql
